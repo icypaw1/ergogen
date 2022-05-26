@@ -243,14 +243,11 @@ outlines:
         operation: subtract
 pcbs:
   top_plate:
-    # include JLCJLCJLCJLC text somewhere
-    include_keys: false
     outlines:
       edge:
         outline: plate
         layer: Edge.Cuts
   bottom_plate:
-    include_keys: false
     outlines:
       edge:
         outline: bottom_outline
@@ -338,23 +335,4 @@ pcbs:
           B: VCC
           C: GND
           D: P0
-      info_l:
-        type: text
-        anchor:
-          ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
-        params:
-          text: "IsaacCustomTest"
-          justify: left
-      info_r:
-        type: text
-        anchor:
-          ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
-        params:
-          layer: B.SilkS
-          text: "IsaacCustomTest"
-          justify: right mirror
 
